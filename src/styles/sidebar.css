@@ -1,0 +1,18 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(255, 255, 255);
+  border: 3px solid black;
+  margin-left: auto;
+  padding: 16px;
+  padding-left: 32px;
+  z-index: 5;
+  border-top-left-radius: 15px;
+  border-end-start-radius: 15px;
+  height: 100%;
+  width: 200px;
+  top: 0;
+  right: 0;
+  position: fixed;
+  transition: opacity 200ms ease-in-out;
+}

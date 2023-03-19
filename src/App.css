@@ -1,0 +1,41 @@
+.App {
+  text-align: center;
+  font-family: "nanum", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: black;
+  font-weight: 600;
+  overflow: scroll;
+  background-color: rgba(119, 119, 119, 0.155);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@font-face {
+  font-family: "nanum";
+  src: url("/public/fonts/NanumSquareR.ttf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
