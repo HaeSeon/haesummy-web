@@ -7,7 +7,7 @@ import { useEffect } from "react";
 const Container = styled.div`
   width: 100%;
   display: flex;
-  justify-content: center;  
+  justify-content: end;  
   align-items: center;
   height: 48px;
   background-color : pink;
