@@ -10,14 +10,17 @@ const Container = styled.div`
   justify-content: end;  
   align-items: center;
   height: 48px;
-  background-color : pink;
+  background-color : #ffdde5;
 `
 
 export function Header(props: { title: string }) {
   const { visible, toggleVisible } = useVisibleToggle()
   return (
     <Container>
-      <h3 style={{ marginLeft: "auto", marginRight: "-32px" }}>{props.title}</h3>
+      <div style={{ marginLeft: "8px", color: "white", display: "flex", textAlign: "center", alignItems: "center", gap: "4px" }}>
+        <img src="/img/logo.png" alt="" height={"24px"} />
+        <h3 style={{ margin: "0" }}>{props.title}</h3>
+      </div>
       <MenuOutlined
         style={{ fontSize: "24px ", marginLeft: "auto", marginRight: "8px" }}
         onClick={toggleVisible} />

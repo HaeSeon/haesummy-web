@@ -15,6 +15,7 @@ export function Sidebar(props: {
   ];
   const projectMenus = [
     { name: "이거 엔딩보기 쉽지않을껄?", path: "/travel/main" },
+    { name: "공유공간", path: "/space" }
   ];
 
 
@@ -76,6 +77,9 @@ export function Sidebar(props: {
         <h3 style={{ margin: 0, color: "pink" }}>
           Project
         </h3>
+        <div style={{ padding: "8px" }} onClick={() => { window.open("https://takingprize.com") }}>
+          킹받는 어워즈, 킹받즈
+        </div>
         {getProjectMenus().map((menu, index) => {
           return (
             <Link
@@ -89,9 +93,7 @@ export function Sidebar(props: {
             </Link>
           );
         })}
-        <div style={{ padding: "8px" }} onClick={() => { window.open("https://takingprize.com") }}>
-          킹받는 어워즈, 킹받즈
-        </div>
+
       </div>
     </div>
   );

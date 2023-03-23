@@ -15,7 +15,7 @@ root.render(
       theme={{
         token: {
           colorPrimary: '#000000',
-          fontFamily: 'nanum',
+          fontFamily: 'appleM',
           fontSize: 16,
         },
       }}
