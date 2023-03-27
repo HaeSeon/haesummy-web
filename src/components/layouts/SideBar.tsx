@@ -15,7 +15,7 @@ export function Sidebar(props: {
   ];
   const projectMenus = [
     { name: "이거 엔딩보기 쉽지않을껄?", path: "/travel/main" },
-    { name: "공유공간", path: "/space" }
+    // { name: "공유공간", path: "/space" }
   ];
 
 

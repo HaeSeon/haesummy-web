@@ -50,7 +50,7 @@ const questions: Question[] = [
     options: [
       { index: 0, category: "저가항공이라 기내식은 커녕 물도 없음", isPass: false, failMessage: "참지 못한 갈증으로 비행기 창문 깨고 탈출" },
       { index: 1, category: "beef, please", isPass: false, failMessage: "맛없어서 돌연사" },
-      { index: 2, category: "fish, please", isPass: false, failMessage: "물고기가 상했다. " },
+      { index: 2, category: "fish, please", isPass: false, failMessage: "메뉴 품절로 배고파서 사망" },
       { index: 3, category: "비행기에 술 뭐있지?!", isPass: true },
 
     ]
@@ -93,20 +93,20 @@ const questions: Question[] = [
     question: "다음날 아침, 날씨가 너무 좋다. /오늘은 파리 시내 투어를 해보자! 어디를 갈까?",
     options: [
       { index: 0, category: "역시 파리는 에펠탑이지", isPass: true },
-      { index: 1, category: "루브르! 오세르! 미술관 투어", isPass: false, failMessage: "와인과 요리가 너무 맛이있었던 나머지 레스토랑과 한국 가맹점을 내기로 했다. 일 때문에 여행 포기" },
-      { index: 2, category: "베르사유의 궁전", isPass: false, failMessage: "요리에 요자도 몰랐다. 괴식을 만들어버렸다. 너무 맛없어서 쇼크로 사망" },
-      { index: 3, category: "몽마르뜨 언덕", isPass: false, failMessage: "분위기에 취해 에펠탑에 올라가다 현지 경찰에게 체포당했다. " },
+      { index: 1, category: "루브르! 오세르! 미술관 투어", isPass: false, failMessage: "이번 문제는 특별히 꽝 하난데 이걸 고르네" },
+      { index: 2, category: "베르사유의 궁전", isPass: true },
+      { index: 3, category: "몽마르뜨 언덕", isPass: true },
 
     ]
   },
   {
     index: 6,
-    question: "오늘은 근교 노르망디 투어를 하는날!  ",
+    question: "오늘은 근교 투어를 하는날!",
     options: [
-      { index: 0, category: "", isPass: true },
-      { index: 1, category: "", isPass: false, failMessage: "와인과 요리가 너무 맛이있었던 나머지 레스토랑과 한국 가맹점을 내기로 했다. 일 때문에 여행 포기" },
-      { index: 2, category: "", isPass: false, failMessage: "요리에 요자도 몰랐다. 괴식을 만들어버렸다. 너무 맛없어서 쇼크로 사망" },
-      { index: 3, category: "", isPass: false, failMessage: "분위기에 취해 에펠탑에 올라가다 현지 경찰에게 체포당했다. " },
+      { index: 0, category: "파리 디즈니랜드", isPass: true },
+      { index: 1, category: "노르망디 몽생미셸", isPass: false, failMessage: "몽생미셸과 도시를 이어주는 다리가 물에 잠겨서 고립되어버렸다." },
+      { index: 2, category: "모네의 집과 정원이 있는 지베르니", isPass: false, failMessage: "얼굴이 모네모네모네모가 되어버렸다." },
+      { index: 3, category: "하울의 움직이는성, 콜마르", isPass: false, failMessage: "파리와 너무 멀어서 오는 기차를 타지 못해 낙오되었다. " },
 
     ]
   },
@@ -116,7 +116,7 @@ const questions: Question[] = [
     options: [
       { index: 0, category: "안녕하세요! 저도 한국사람이에요!", isPass: false, failMessage: "친해져서 함께 칵테일 한 잔 했는데 가게 안 모든 술값을 나한테 덤탱이 씌웠다. " },
       { index: 1, category: "헬로우 웨얼 이즈 더 서브웨이?", isPass: false, failMessage: "서브웨이 샌드위치 가게를 알려줬는데 장난하냐며 욕을 된통 먹었다." },
-      { index: 2, category: "헤이 기브미 원달러 원달러 원달러", isPass: false, failMessage: "" },
+      { index: 2, category: "헤이 기브미 원달러 원달러 원달러", isPass: false, failMessage: "이걸 고른사람이 있다고? 이건 누가봐도 피해야지;;" },
       { index: 3, category: "이쪽으로 가시면 위험해요! 제가 같이 가드릴게요.", isPass: true }, // 착한 사람 이었다.
 
     ]
@@ -134,7 +134,7 @@ const questions: Question[] = [
   },
   {
     index: 9,
-    question: "파리에서의 마지막 한끼. 뭘 먹을까? (너무 마음에 들어 정착하기로 함 여행 실패) ",
+    question: "파리에서의 마지막 한끼. 뭘 먹을까?",
     options: [
       { index: 0, category: "고오급 프랑스 파인다이닝", isPass: false, failMessage: "음식에 감명받아 파리가 너무 마음에 들어 정착하기로 함" },
       { index: 1, category: "영화에 환상이 있던 라따뚜이", isPass: true },
@@ -188,7 +188,7 @@ export function TravelTest() {
   return (
     <div>
       <Container>
-        <Progress percent={(index + 1) * 10} style={{ width: "90%", margin: 0 }} />
+        <Progress percent={index * 10} style={{ width: "90%", margin: 0 }} />
         <h3>{questions[index].question.split("/").map(line => {
           return <div key={line}>{line}</div>
         })}</h3>
@@ -201,8 +201,12 @@ export function TravelTest() {
               <Button
                 onClick={() => {
                   if (option.isPass) {
-                    setIndex((idx) => idx + 1)
-                    addResult(option)
+                    if (index === 9) {
+                      navigate("/travel/complete")
+                    } else {
+                      setIndex((idx) => idx + 1)
+                      addResult(option)
+                    }
                   } else {
                     setFailMessage(option.failMessage!!)
                     setIsModalOpen(true)

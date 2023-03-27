@@ -1,8 +1,7 @@
 import styled from "styled-components";
-import { Button, Divider } from 'antd'
+import { Divider } from 'antd'
 import { Footer } from "../components/layouts/Footer";
 import { GithubOutlined, InstagramOutlined } from "@ant-design/icons";
-import MapContainer from "../components/MapContainer";
 
 const Container = styled.div`
   display: flex;
@@ -138,7 +137,7 @@ export function Resume() {
             - 세상 심플한 성격 <br />
             - 밤 잘 새워요 <br />
             - 개발 속도 빠름 (코드 다량 보유) <br />
-            - 팀플 실패 경험 없음
+            - 팀플 실패 경험 없음 <br />
             - 발상의 전환, 아이디어뱅크
           </div>
         </div>
