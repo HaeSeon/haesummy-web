@@ -4,7 +4,7 @@ import MapContainer from "../components/MapContainer";
 export function SharingSpace() {
   return <div>
     hello
-    <MapContainer />
+    {/* <MapContainer /> */}
     <Footer />
   </div>
 }
