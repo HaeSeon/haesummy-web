@@ -37,9 +37,9 @@ export function Resume() {
 
         <div style={{ padding: "24px" }}>
           <div style={{ backgroundColor: "#e9e9e9", padding: "16px", textAlign: "center", fontSize: "0.95rem" }}>
-            <b>구름톤</b> 5기에 함께하게 되어서 행복합니다. <br />
-            목표는 정식 <b>서비스 출시</b>, 경유지는 <b>대상</b><br />
-            함께 <b>좋은 팀</b>, <b>좋은 서비스</b>를 만들어가요!
+            여행하는 개발자 이해선입니다. <br />
+            몰입하여 함께 배우며 <b>성장</b>하는것을 좋아해요.<br />
+            함께 <b>좋은 팀</b>, 좋은 서비스를 만들어가요!
           </div>
           <Divider />
           <h3>Career</h3>
@@ -80,9 +80,22 @@ export function Resume() {
 
                     }}>킹받즈</span> 출시</td>
                 </tr>
+                <tr>
+                  <td width={"25%"}>2023.03</td>
+                  <td>[kakao X groom] 해커톤 최우수상 <span
+                    style={{
+                      fontWeight: 600,
+                      textDecoration: "underline",
+                      // marginLeft: "8px"
+                    }}
+                    onClick={() => {
+                      window.open("https://ddokdarman.site")
+
+                    }}>똑닮안</span></td>
+                </tr>
               </tbody>
             </table>
-            <div style={{ textAlign: "end" }}>
+            <div style={{ textAlign: "end" }} onClick={() => { window.open("https://circular-height-089.notion.site/63925eed1fed4ecf8f8d5647fbf4de24") }}>
               More info - Notion link
             </div>
           </div>

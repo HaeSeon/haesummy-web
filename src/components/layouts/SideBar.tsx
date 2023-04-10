@@ -77,6 +77,9 @@ export function Sidebar(props: {
         <h3 style={{ margin: 0, color: "pink" }}>
           Project
         </h3>
+        <div style={{ padding: "8px" }} onClick={() => { window.open("https://ddokdarman.site") }}>
+          나와 닮은 농산물은? 똑닮안
+        </div>
         <div style={{ padding: "8px" }} onClick={() => { window.open("https://takingprize.com") }}>
           킹받는 어워즈, 킹받즈
         </div>
