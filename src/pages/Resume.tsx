@@ -30,7 +30,7 @@ export function Resume() {
             #ENTP
             #개발좋아함 #수학좋아함<br />
             #추진력 #알코올 #한다면한다 #긍정왕<br />
-            #대학교밴드보컬 #프로여행러<br />
+            #프로여행러 #몰입왕<br />
           </div>
           <img src="/img/profile.jpg" alt="" height={"124px"} style={{ marginLeft: "auto" }} />
         </div>
@@ -38,8 +38,8 @@ export function Resume() {
         <div style={{ padding: "24px" }}>
           <div style={{ backgroundColor: "#e9e9e9", padding: "16px", textAlign: "center", fontSize: "0.95rem" }}>
             여행하는 개발자 이해선입니다. <br />
-            몰입하여 함께 배우며 <b>성장</b>하는것을 좋아해요.<br />
-            함께 <b>좋은 팀</b>, 좋은 서비스를 만들어가요!
+            <b>몰입 </b>하여 함께 배우며 <b>성장</b>하는것을 좋아해요.<br />
+            함께 좋은 팀, 좋은 서비스를 만들어가요!
           </div>
           <Divider />
           <h3>Career</h3>
@@ -91,7 +91,17 @@ export function Resume() {
                     onClick={() => {
                       window.open("https://ddokdarman.site")
 
-                    }}>똑닮안</span></td>
+                    }}>똑닮안</span> <br />
+                    <span
+                      style={{
+                        color: "gray",
+                        textDecoration: "underline",
+                        // marginLeft: "8px"
+                      }}
+                      onClick={() => { window.open("https://9oormthon.goorm.io/cb37a9b5-6a16-4d88-afe9-f4ea9ac9b7bd") }}>
+                      소개자료 보러가기
+                    </span>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -139,7 +149,8 @@ export function Resume() {
             - 프로젝트 리딩 경험 <br />
             - 프로젝트 기획, 설계, 개발, 배포, 유지보수 경험 <br />
             - AWS 클라우드 환경에서 서비스 배포/운영 경험 <br />
-            - 인공지능 모델을 api로 만들어 사용한 경험 많음
+            - 인공지능 활용 경험 多 <br />
+            - 개발할 때 옆에서 춤춰도 모르는 집중력
           </div>
 
           <Divider />
@@ -149,8 +160,6 @@ export function Resume() {
             - 인공지능, 디자인, 기획 다양한 분야에 관심이 있음 <br />
             - 세상 심플한 성격 <br />
             - 밤 잘 새워요 <br />
-            - 개발 속도 빠름 (코드 다량 보유) <br />
-            - 팀플 실패 경험 없음 <br />
             - 발상의 전환, 아이디어뱅크
           </div>
         </div>
