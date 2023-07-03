@@ -18,19 +18,23 @@ export function Resume() {
         <div style={{ display: "flex", textAlign: "start", padding: "0 24px", gap: "16px", alignItems: "center" }}>
 
           <div style={{ padding: "8px" }}>
-            <div style={{ paddingTop: "8px", textAlign: "center" }}>
+            <div style={{ paddingTop: "8px" }}>
               <GithubOutlined style={{ fontSize: "32px", marginRight: "16px", textAlign: "center" }} onClick={() => {
                 window.open("https://github.com/HaeSeon")
               }} />
+              <img src="/img/blog.png"
+                onClick={() => {
+                  window.open("https://haesummy.tistory.com")
+                }}
+                alt="" height={"28px"} style={{ marginRight: "16px", textAlign: "center", marginBottom: 0 }} />
               <InstagramOutlined style={{ fontSize: "32px", textAlign: "center", color: "purple" }} onClick={() => {
                 window.open("https://www.instagram.com/travel.haesummy")
               }} />
             </div>
             <br />
-            #ENTP
-            #개발좋아함 #수학좋아함<br />
-            #추진력 #알코올 #한다면한다 #긍정왕<br />
-            #프로여행러 #몰입왕<br />
+            #개발좋아함 #수학좋아함 #문제해결능력<br />
+            #추진력 #한다면한다 #긍정왕<br />
+            #프로여행러 #몰입왕 #창의력<br />
           </div>
           <img src="/img/profile.jpg" alt="" height={"124px"} style={{ marginLeft: "auto" }} />
         </div>
@@ -76,7 +80,7 @@ export function Resume() {
                       // marginLeft: "8px"
                     }}
                     onClick={() => {
-                      window.open("https://takingprize.com")
+                      window.open("https://takingprize.com/users/421ea804-0952-4216-93c6-340fab88fac9/prizeList")
 
                     }}>킹받즈</span> 출시</td>
                 </tr>
@@ -103,10 +107,14 @@ export function Resume() {
                     </span>
                   </td>
                 </tr>
+                <tr>
+                  <td width={"25%"}>2023.06~ </td>
+                  <td>혁신공공서비스 발굴을 위한 서울시 생성 AI 해커톤 <br />진행중</td>
+                </tr>
               </tbody>
             </table>
-            <div style={{ textAlign: "end" }} onClick={() => { window.open("https://circular-height-089.notion.site/63925eed1fed4ecf8f8d5647fbf4de24") }}>
-              More info - Notion link
+            <div style={{ textAlign: "end", color: "purple" }} onClick={() => { window.open("https://circular-height-089.notion.site/63925eed1fed4ecf8f8d5647fbf4de24") }}>
+              More info - 이력서 보러가기
             </div>
           </div>
 
