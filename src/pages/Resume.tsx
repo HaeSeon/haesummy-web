@@ -102,7 +102,7 @@ export function Resume() {
                         textDecoration: "underline",
                         // marginLeft: "8px"
                       }}
-                      onClick={() => { window.open("https://9oormthon.goorm.io/cb37a9b5-6a16-4d88-afe9-f4ea9ac9b7bd") }}>
+                      onClick={() => { window.open("https://9oormthon.goorm.io/30a437a5-e256-4e9f-8512-1dcfacc0f8af") }}>
                       소개자료 보러가기
                     </span>
                   </td>
